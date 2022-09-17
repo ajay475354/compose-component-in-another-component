@@ -23,11 +23,16 @@
           </h1>
         );
       };
-      ReactDOM.render(
+
+      const Greetings = () => (
         <div>
           <Welcome name="ajay kumar" greeting="hello arepalli" />
           <Welcome name="kav" greeting="hello arepalli" />
-        </div>,
+        </div>
+      );
+
+      ReactDOM.render(
+        <Greetings />,
 
         document.getElementById("root")
       );
